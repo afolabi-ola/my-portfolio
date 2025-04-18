@@ -1,3 +1,4 @@
+import NavBar from './_components/NavBar';
 import './globals.css';
 export default function RootLayout({
   children,
@@ -6,8 +7,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>
-        <header></header>
+      <body className='bg-text-base dark:bg-background'>
+        <header className='bg-surface'>
+          <NavBar />
+        </header>
         <main>{children}</main>
         <footer></footer>
       </body>
